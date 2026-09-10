@@ -14,6 +14,8 @@ def calculate_total(
     # its argument (apply_discount, apply_tax, or apply_shipping)
     if subtotal > 50:
         total = total*0.9
+    if apply_tax:
+        total *= 1.08 # Apply 8% tax
 
     return total
 
